@@ -6,21 +6,29 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Ubicacion {
 
 	private Posicion posicion;
-	private String icon; 
-	private String title;
-	
-	
+	private String imagen;
+	private String descripcion;
+	private Double distancia;
+
 	public Ubicacion() {
 		super();
 	}
 
+	public Ubicacion(Posicion posicion, String imagen, String descripcion, Double distancia) {
+		super();
+		this.posicion = posicion;
+		this.imagen = imagen;
+		this.descripcion = descripcion;
+		this.distancia = distancia;
+	}
+
 	public Ubicacion(Posicion posicion, String icon, String title) {
 		super();
-		this.posicion= posicion;
-		this.icon = icon;
-		this.title = title;
+		this.posicion = posicion;
+		this.imagen = icon;
+		this.descripcion = title;
 	}
-	
+
 	public Posicion getPosicion() {
 		return posicion;
 	}
@@ -29,20 +37,28 @@ public class Ubicacion {
 		this.posicion = posicion;
 	}
 
-	public String getIcon() {
-		return icon;
+	public String getImagen() {
+		return imagen;
 	}
-	
-	public void setIcon(String icon) {
-		this.icon = icon;
+
+	public void setImagen(String imagen) {
+		this.imagen = imagen;
 	}
-	
-	public String getTitle() {
-		return title;
+
+	public String getDescripcion() {
+		return descripcion;
 	}
-	
-	public void setTitle(String title) {
-		this.title = title;
+
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
 	}
-	
+
+	public Double getDistancia() {
+		return distancia;
+	}
+
+	public void setDistancia(Double distancia) {
+		this.distancia = distancia;
+	}
+
 }

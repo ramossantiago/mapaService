@@ -48,6 +48,7 @@ public class Servicios {
 					posicion.getLongitud());
 			System.out.println("Distancia " + distanciaEntrePuntos);
 			if (distanciaEntrePuntos <= distanciaMaxima) {
+				ubicacionElemento.setDistancia(distanciaEntrePuntos);
 				listado.add(ubicacionElemento);
 			}
 		}
@@ -58,13 +59,13 @@ public class Servicios {
 
 	private List<Ubicacion> obtenerTotalUbicaciones() {
 		List<Ubicacion> listado = new ArrayList<>();
-		Ubicacion ub1 = new Ubicacion(new Posicion(-0.292018, -78.477846), "icono", "Posicion 1");
+		Ubicacion ub1 = new Ubicacion(new Posicion(-0.292018, -78.477846), "img1.jpg", "Posicion 1");
 		listado.add(ub1);
-		Ubicacion ub2 = new Ubicacion(new Posicion(-0.285014, -78.472250), "icono", "Posicion 2");
+		Ubicacion ub2 = new Ubicacion(new Posicion(-0.285014, -78.472250), "img1.jpg", "Posicion 2");
 		listado.add(ub2);
-		Ubicacion ub3 = new Ubicacion(new Posicion(-0.308758, -78.452609), "icono", "Posicion 3");
+		Ubicacion ub3 = new Ubicacion(new Posicion(-0.308758, -78.452609), "img2.jpg", "Posicion 3");
 		listado.add(ub3);
-		Ubicacion ub4 = new Ubicacion(new Posicion(-0.312426, -78.479969), "icono", "Posicion 4");
+		Ubicacion ub4 = new Ubicacion(new Posicion(-0.312426, -78.479969), "img3.jpg", "Posicion 4");
 		listado.add(ub4);
 
 		return listado;
