@@ -67,6 +67,14 @@ public class Servicios {
 		listado.add(ub3);
 		Ubicacion ub4 = new Ubicacion(new Posicion(-0.312426, -78.479969), "img3.jpg", "Posicion 4");
 		listado.add(ub4);
+		Ubicacion ub5 = new Ubicacion(new Posicion(-0.17679463836506806, -78.47511614943755), "img3.jpg", "Posicion 5");
+		listado.add(ub5);
+		Ubicacion ub6 = new Ubicacion(new Posicion(-0.18137225359546577, -78.4818395535865), "img3.jpg", "Posicion 6");
+		listado.add(ub6);
+		Ubicacion ub7 = new Ubicacion(new Posicion(-0.1692606462073677, -78.48436679037945), "img3.jpg", "Posicion 7");
+		listado.add(ub7);
+		Ubicacion ub8 = new Ubicacion(new Posicion(-0.164301561355471, -78.47893084688508), "img3.jpg", "Posicion 8");
+		listado.add(ub8);
 
 		return listado;
 	}
